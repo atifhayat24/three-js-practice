@@ -83,7 +83,7 @@ window.addEventListener("mousemove", (e) => {
       Math.round((e.pageY / size.height) * 255),
       150,
     ];
-
+    console.log(rgb);
     let newColor = new THREE.Color(`rgb(${rgb.join(",")})`);
     gsap.to(mesh.material.color, {
       r: newColor.r,
